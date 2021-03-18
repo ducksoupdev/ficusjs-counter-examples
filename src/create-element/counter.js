@@ -1,4 +1,4 @@
-import { createComponent } from 'https://unpkg.com/ficusjs@2.0.0/dist/component.js'
+import { createComponent } from 'https://cdn.skypack.dev/ficusjs/component'
 
 function renderer (what, where) {
     while (where.firstChild) where.removeChild(where.firstChild)

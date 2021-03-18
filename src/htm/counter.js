@@ -1,5 +1,5 @@
-import { renderer, html } from '@ficusjs/renderers/uhtml'
-import { createComponent } from 'ficusjs/component'
+import { renderer, html } from 'https://cdn.skypack.dev/@ficusjs/renderers/htm'
+import { createComponent } from 'https://cdn.skypack.dev/ficusjs/component'
 
 createComponent('my-counter', {
     renderer,

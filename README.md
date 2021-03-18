@@ -10,7 +10,8 @@ The same `<my-counter />` web component has been written 4 times in [FicusJS](ht
 The renderers used are:
 
 - `createElement`
-- [htm with preact](https://www.npmjs.com/package/htm)
+- [htm](https://www.npmjs.com/package/htm)
+- [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact)
 - [lit-html](https://www.npmjs.com/package/lit-html)
 - [uhtml](https://www.npmjs.com/package/uhtml)
 

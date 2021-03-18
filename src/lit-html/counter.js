@@ -1,5 +1,5 @@
-import { render as renderer, html } from 'https://unpkg.com/lit-html?module'
-import { createComponent } from 'https://unpkg.com/ficusjs@2.0.0/dist/component.js'
+import { renderer, html } from 'https://cdn.skypack.dev/@ficusjs/renderers/lit-html'
+import { createComponent } from 'https://cdn.skypack.dev/ficusjs/component'
 
 createComponent('my-counter', {
     renderer,

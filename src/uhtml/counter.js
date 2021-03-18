@@ -1,10 +1,8 @@
-import { render as uhtmlRenderer, html } from 'https://unpkg.com/uhtml?module'
-import { createComponent } from 'https://unpkg.com/ficusjs@2.0.0/dist/component.js'
+import { renderer, html } from 'https://cdn.skypack.dev/@ficusjs/renderers/uhtml'
+import { createComponent } from 'https://cdn.skypack.dev/ficusjs/component'
 
 createComponent('my-counter', {
-    renderer (what, where) {
-        uhtmlRenderer(where, what)
-    },
+    renderer,
     state () {
         return { count: 0 }
     },

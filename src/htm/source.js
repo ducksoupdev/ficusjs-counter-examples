@@ -1,4 +1,4 @@
-import { renderer, html } from '@ficusjs/renderers/uhtml'
+import { renderer, html } from '@ficusjs/renderers/htm'
 import { createComponent } from 'ficusjs/component'
 
 createComponent('my-counter', {
@@ -32,9 +32,9 @@ createComponent('my-counter', {
                 font-size: 200%;
               }
           </style>
-          <button onclick="${this.dec}">-</button>
+          <button onClick="${this.dec}">-</button>
           <span>${this.state.count}</span>
-          <button onclick="${this.inc}">+</button>
+          <button onClick="${this.inc}">+</button>
         `
     }
 })

@@ -1,5 +1,5 @@
-import { render as renderer, html } from 'lit-html'
-import { createComponent } from 'ficusjs/dist/component'
+import { renderer, html } from '@ficusjs/renderers/lit-html'
+import { createComponent } from 'ficusjs/component'
 
 createComponent('my-counter', {
     renderer,

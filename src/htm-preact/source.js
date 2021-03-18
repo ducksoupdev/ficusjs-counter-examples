@@ -1,5 +1,5 @@
-import { render as renderer, html } from 'htm/preact/standalone.module'
-import { createComponent } from 'ficusjs/dist/component'
+import { renderer, html } from '@ficusjs/renderers/htm-preact'
+import { createComponent } from 'ficusjs/component'
 
 createComponent('my-counter', {
     renderer,

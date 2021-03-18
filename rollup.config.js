@@ -23,6 +23,7 @@ files.forEach(f => {
             resolve(),
             commonjs(),
             replace({
+                preventAssignment: true,
                 'process.env.NODE_ENV': JSON.stringify('production')
             }),
             babel({

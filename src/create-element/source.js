@@ -1,4 +1,4 @@
-import { createComponent } from 'ficusjs/dist/component'
+import { createComponent } from 'ficusjs/component'
 
 function renderer (what, where) {
     while (where.firstChild) where.removeChild(where.firstChild)

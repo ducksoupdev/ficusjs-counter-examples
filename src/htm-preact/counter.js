@@ -1,5 +1,5 @@
-import { render as renderer, html } from 'https://unpkg.com/htm/preact/standalone.module.js'
-import { createComponent } from 'https://unpkg.com/ficusjs@2.0.0/dist/component.js'
+import { renderer, html } from 'https://cdn.skypack.dev/@ficusjs/renderers/htm-preact'
+import { createComponent } from 'https://cdn.skypack.dev/ficusjs/component'
 
 createComponent('my-counter', {
     renderer,
