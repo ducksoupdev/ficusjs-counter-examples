@@ -11,7 +11,7 @@
         iframe {
             border: 1px solid lightgray;
             display: inline-block;
-            max-height: 80px;
+            min-height: 440px;
         }
         .examples div {
             display: inline-block;
@@ -19,33 +19,51 @@
     </style>
 </head>
 <body>
-<h1>Counter example with FicusJS</h1>
+    <h1 id="ficusjs-counter-examples">FicusJS counter examples</h1>
+<p>Inspired by <a href="https://webcomponents.dev/">Webcomponents.dev</a> <a href="https://webcomponents.dev/blog/all-the-ways-to-make-a-web-component/"><em>All the Ways to Make a Web Component</em></a>,
+this is a comparison of coding style, bundle size and performance of 4 different ways to make a Web Component with <a href="https://github.com/ficusjs/ficusjs">FicusJS</a>!</p>
+<h2 id="summary">Summary</h2>
+<p>The same <code>&lt;my-counter /&gt;</code> web component has been written 4 times in <a href="https://github.com/ficusjs/ficusjs">FicusJS</a> using different renderers.</p>
+<p>The renderers used are:</p>
+<ul>
+<li><code>createElement</code></li>
+<li><a href="https://www.npmjs.com/package/htm">htm</a></li>
+<li><a href="https://www.npmjs.com/package/htm">htm</a> with <a href="https://www.npmjs.com/package/preact">Preact</a></li>
+<li><a href="https://www.npmjs.com/package/lit-html">lit-html</a></li>
+<li><a href="https://www.npmjs.com/package/uhtml">uhtml</a></li>
+    </ul>
+<h2>Examples</h2>
 <div class="examples">
     <div>
+        <h3>createElement</h3>
         <iframe src="create-element" frameborder="0"></iframe>
         <p>
             <a href="create-element" target="_blank">Open in new tab</a>
         </p>
     </div>
     <div>
+        <h3>htm</h3>
         <iframe src="htm" frameborder="0"></iframe>
         <p>
             <a href="htm" target="_blank">Open in new tab</a>
         </p>
     </div>
     <div>
+        <h3>htm and Preact</h3>
         <iframe src="htm-preact" frameborder="0"></iframe>
         <p>
             <a href="htm-preact" target="_blank">Open in new tab</a>
         </p>
     </div>
     <div>
+        <h3>lit-html</h3>
         <iframe src="lit-html" frameborder="0"></iframe>
         <p>
             <a href="lit-html" target="_blank">Open in new tab</a>
         </p>
     </div>
     <div>
+        <h3>uhtml</h3>
         <iframe src="uhtml" frameborder="0"></iframe>
         <p>
             <a href="uhtml" target="_blank">Open in new tab</a>
