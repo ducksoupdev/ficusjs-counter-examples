@@ -15,6 +15,10 @@ The renderers used are:
 - [lit-html](https://www.npmjs.com/package/lit-html)
 - [uhtml](https://www.npmjs.com/package/uhtml)
 
+## Demo
+
+[https://ficusjs.github.io/ficusjs-counter-examples/](https://ficusjs.github.io/ficusjs-counter-examples/)
+
 ## Getting started
 
 ```sh
