@@ -1,14 +1,6 @@
-import { createComponent } from 'https://cdn.skypack.dev/ficusjs/component'
-
-function renderer (what, where) {
-    while (where.firstChild) where.removeChild(where.firstChild)
-    const element = document.createElement('div')
-    element.innerHTML = what
-    where.appendChild(element)
-}
+import { createComponent } from 'ficusjs/component'
 
 createComponent('my-counter', {
-    renderer,
     state () {
         return { count: 0 }
     },
@@ -23,13 +15,6 @@ createComponent('my-counter', {
     },
     updated () {
         this.setupEvents()
-    },
-    removed () {
-        this.cleanupEvents()
-    },
-    cleanupEvents () {
-        this.querySelector('.btn-dec').removeEventListener('click', this.dec)
-        this.querySelector('.btn-inc').removeEventListener('click', this.inc)
     },
     setupEvents () {
         this.querySelector('.btn-dec').addEventListener('click', this.dec)
